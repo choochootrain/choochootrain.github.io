@@ -60,7 +60,9 @@
           alpha: true
         });
         renderer.setSize(WIDTH, HEIGHT);
-        renderer.setClearColor(0xE0E0E0, 1);
+        renderer.setClearColor(0x212121, 1);
+        renderer.shadowMapEnabled = true;
+        renderer.shadowMapType = THREE.PCFSoftShadowMap;
 
         var $container = $('#glcontainer');
         $container.append(renderer.domElement);
@@ -103,6 +105,19 @@
           scene.add(pointLight);
         }
 
+        var spotLight = new THREE.SpotLight(0xFFFFFF);
+        spotLight.position.set(0, 150, 0);
+        spotLight.castShadow = true;
+        spotLight.shadowDarkness = 0.35;
+        scene.add(spotLight);
+
+        var ground = new THREE.Mesh(new THREE.CubeGeometry(1000, 1, 1000), new THREE.MeshBasicMaterial({
+          color: 0x212121
+        }));
+        ground.position.set(0, -75, 0);
+        ground.receiveShadow = true;
+        scene.add(ground);
+
         var SIZE = 50;
         var geometry = new THREE.TetrahedronGeometry(SIZE, 1);
 
@@ -131,6 +146,8 @@
         var torii = [];
         for (var i = 0; i < materialProperties.length; i++) {
           torii.push(new THREE.Mesh(geometry, new THREE.MeshLambertMaterial(materialProperties[i])));
+          torii[i].castShadow = true;
+          torii[i].receiveShadow = true;
           scene.add(torii[i]);
         }
 
@@ -138,11 +155,13 @@
         torii[1].rotateOnAxis(Y, 90);
         torii[2].rotateOnAxis(Z, 90);
 
+        var speed = 0.007;
+
         function animate(timestamp) {
           for (var i = 0; i < torii.length; i++) {
-            torii[i].rotateOnAxis(X, 0.01);
-            torii[i].rotateOnAxis(Y, 0.01);
-            torii[i].rotateOnAxis(Z, 0.01);
+            torii[i].rotateOnAxis(X, speed);
+            torii[i].rotateOnAxis(Y, speed);
+            torii[i].rotateOnAxis(Z, speed);
           }
 
           renderer.render(scene, camera);
@@ -158,7 +177,7 @@
     <div class="container">
       <div class="everything">
         <center>
-          i break things.
+          <span class="tagline"></span>
           </br>
           </br>
           <a href="https://github.com/choochootrain">@choochootrain</a></br>

@@ -169,6 +169,19 @@
         };
 
         animate();
+
+        taglines = ['break', 'build', 'write', 'draw', 'say', 'do', 'learn', 'teach', 'make', 'read'];
+
+        function tagline() {
+          $('.tagline').slideUp(500, function() {
+            $('.tagline').text('i ' + taglines[Math.floor(Math.random() * taglines.length)] + ' things.');
+            $('.tagline').slideDown(500);
+          });
+
+          setTimeout(tagline, 5000);
+        };
+
+        tagline();
       });
     </script>
   </head>

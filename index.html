@@ -70,6 +70,14 @@
         var camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);
         camera.position.z = 300;
 
+        $(window).on('resize', function() {
+          WIDTH = document.body.clientWidth;
+          HEIGHT = document.body.clientHeight;
+          renderer.setSize(WIDTH, HEIGHT);
+          camera.aspect = WIDTH / HEIGHT;
+          camera.updateProjectionMatrix()
+        });
+
         var scene = new THREE.Scene();
         scene.add(camera);
 

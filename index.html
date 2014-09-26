@@ -176,29 +176,6 @@
         };
 
         animate();
-
-        taglines = ['break', 'build', 'write', 'say', 'do', 'learn', 'teach', 'make', 'read'];
-        function shuffle(o) {
-          for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-            return o;
-        };
-        taglines = shuffle(taglines);
-
-        var i = 0;
-        function get_tagline(i) {
-          return taglines[i % taglines.length];
-        };
-
-        function tagline() {
-          $('.tagline').slideUp(500, function() {
-            $('.tagline').text('i ' + get_tagline(i++) + ' things.');
-            $('.tagline').slideDown(500);
-          });
-
-          setTimeout(tagline, 5000);
-        };
-
-        tagline();
       });
     </script>
   </head>
@@ -207,7 +184,7 @@
     <div class="container">
       <div class="everything">
         <center>
-          <span class="tagline"></span>
+          <span class="tagline">i have no idea what i'm doing</span>
           </br>
           </br>
           <a href="https://github.com/choochootrain">@choochootrain</a></br>

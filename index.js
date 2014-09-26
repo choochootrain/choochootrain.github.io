@@ -12,7 +12,6 @@ $(document).ready(function() {
   });
   renderer.setSize(WIDTH, HEIGHT);
   renderer.setClearColor(0x212121, 1);
-  renderer.shadowMapEnabled = true;
 
   var $container = $('#glcontainer');
   $container.append(renderer.domElement);
@@ -65,16 +64,7 @@ $(document).ready(function() {
 
   var spotLight = new THREE.SpotLight(0xFFFFFF);
   spotLight.position.set(0, 150, 0);
-  spotLight.castShadow = true;
-  spotLight.shadowDarkness = 0.35;
   scene.add(spotLight);
-
-  var ground = new THREE.Mesh(new THREE.CubeGeometry(1000, 1, 1000), new THREE.MeshBasicMaterial({
-    color: 0x212121
-  }));
-  ground.position.set(0, -75, 0);
-  ground.receiveShadow = true;
-  scene.add(ground);
 
   var SIZE = 50;
   var geometry = new THREE.TetrahedronGeometry(SIZE, 1);
@@ -104,8 +94,6 @@ $(document).ready(function() {
   var torii = [];
   for (var i = 0; i < materialProperties.length; i++) {
     torii.push(new THREE.Mesh(geometry, new THREE.MeshLambertMaterial(materialProperties[i])));
-    torii[i].castShadow = true;
-    torii[i].receiveShadow = true;
     scene.add(torii[i]);
   }
 

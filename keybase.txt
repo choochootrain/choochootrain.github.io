@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/choochootrain
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://iam.choochootra.in
+  * I am choochootrain (https://keybase.io/choochootrain) on keybase.
+  * I have a public key with fingerprint 916D F9CC C7C6 D7FF E8A8  030A F74B B986 3B7D BD82
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.25"
+        },
+        "key": {
+            "eldest_kid": "0101e2dcfdcc10cec2081504e46a07d4f7c3339b2ec943e8642b2dee12964cf35f4c0a",
+            "fingerprint": "916df9ccc7c6d7ffe8a8030af74bb9863b7dbd82",
+            "host": "keybase.io",
+            "key_id": "f74bb9863b7dbd82",
+            "kid": "0101e2dcfdcc10cec2081504e46a07d4f7c3339b2ec943e8642b2dee12964cf35f4c0a",
+            "uid": "c01bc5ac16fd3d323d0184f5443ac719",
+            "username": "choochootrain"
+        },
+        "service": {
+            "hostname": "iam.choochootra.in",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1460875078,
+    "expire_in": 157680000,
+    "prev": "5bebeccb6c59337c322ba4749ad7cf30daec65465ea0b254d4f885691e945e0b",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtkltIFUEYx4+ZcUwToxuWha0VZKfT7O7szYoiyKzsoUgUok5zW13T3dPuapkZ
+1IMURBYUPdgNo0xMLMogtCQiL0nRS4UQRveSiC5EGAXtiEFBjw0MDHy/7z//7z9z
+eEJiKJzwbe31usW1N/Yl9L/DoaJJiwprBOzQaiG3RiDlFrN9frJRBRNyhW2sGiOP
+RS0ny3Yoi5Z5WaNMRKhirmc5dkCBqB6VFKE2wnnezcop8/zYNovyqghEJlFiUkJE
+QBiRgC4qADKoIqBRaGpElmUDS4wYUGa6CiUsUcZEyVAhMWXFhASg4ELTskuYG3ct
+blEwRJWaBiFEIyrVTJPpSAcyQKYGMTZ0VcYaxVSXgsZSx/P/GkYYcRobsfcP/j/7
+rhyRI0DEREFEVE0qU1mSKRB1aCoQyohoosFBj7mjwZNSx+Hbd5Fl82SDUpVFGE+X
+jzOKWagi+gcaDdiIEHcd3yFOeVAv9f14Lm/3q+Oc38FwbFQphi37LA0i/fMpxQAl
+vsW1RagCXVOApkcEtjNuuSxmcULRVB0Ei9/DqgJNBTPMCMEqUQxZDkKRJIygBg1E
+tSAGQBEjqgJVhSGAJQUGyem6ohoiM6DCABb4cNttJ9CWAqOoJND0rBIb+ZUuE2oP
+JGSODSWEQ+OSxvDPGhqfnP77B09tDIca+y6dGNhUltWy8+OCnLSUocz595x2d9Fx
+rWfO8Yytdw7lJXc3eKn+0w0v2+y8DdkTNj+yh49mnEs3T+U9v2/N7mmruXqw+cG3
+IaNqzf4LPb3fU6a/XVfY/0XNipR2hDt/fhi8k92+uOhwwbLdS08PzHtzYeWtSd1t
+ZZnr9fihgR9d9Xu7XqCMtPfx8Ksi1DmxeD8MT1urFe+5NpR/sOvm5yPnB894ba1r
+jg0tx1ea2C7SkvayIff1jM5NK05Onnt5+9Ucc+qRr5kthQuT8srORVYtuXji0tyZ
+da+frR6++/Dxi/y+pILWcVvqUqc09Xw6urqj3kmvePUkerlXGZzVdLt1Y2JDc/0v
+=FgyS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/choochootrain
+
+==================================================================
+
